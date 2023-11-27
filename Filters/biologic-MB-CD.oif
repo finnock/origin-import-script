@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<OriginStorage>
+    <OriginVersion DataID="848" NodeID="14">10.000154</OriginVersion>
+    <Type DataID="849">2</Type>
+    <Display>
+        <iApplyRangeToGraph NodeID="0" DataID="850">0</iApplyRangeToGraph>
+        <iLinkWks NodeID="0" DataID="851">0</iLinkWks>
+        <strRawDataDesignations NodeID="0" DataID="852"/>
+        <strColDesignations NodeID="0" DataID="896"/>
+        <iColDesignationsRepetitive NodeID="0" DataID="853">0</iColDesignationsRepetitive>
+        <strColFormats NodeID="0" DataID="854">9</strColFormats>
+        <iPlotType NodeID="0" DataID="855">200</iPlotType>
+        <strPlotTemplate NodeID="0" DataID="856"/>
+        <iTargetWindowType NodeID="0" DataID="857">-1</iTargetWindowType>
+        <strTargetWindowTemplate NodeID="0" DataID="864"/>
+        <strFilenameToWksLabel NodeID="0" DataID="865">0</strFilenameToWksLabel>
+        <strFileSpec NodeID="0" DataID="866">*.mpt</strFileSpec>
+        <strFileExclusion NodeID="0" DataID="884"></strFileExclusion>
+        <strDescription NodeID="0" DataID="867">
+            <![CDATA[Import single Modulo Bat Charge Discharge from .mpt File]]></strDescription>
+        <nSparklines NodeID="0" DataID="868">2</nSparklines>
+        <bAutoRename NodeID="0" DataID="869">0</bAutoRename>
+        <iWksTrimFNameFrom NodeID="0" DataID="870">1</iWksTrimFNameFrom>
+        <iWksTrimFNameTo NodeID="0" DataID="871">0</iWksTrimFNameTo>
+        <iWkBkTrimFNameFrom NodeID="0" DataID="872">1</iWkBkTrimFNameFrom>
+        <iWkBkTrimFNameTo NodeID="0" DataID="873">0</iWkBkTrimFNameTo>
+        <bAddToFileOpen NodeID="0" DataID="880">1</bAddToFileOpen>
+        <i1stMode NodeID="0" DataID="881">3</i1stMode>
+        <nAutoSize NodeID="0" DataID="882">1</nAutoSize>
+        <bRunAfterAllFileImported NodeID="0" DataID="883">0</bRunAfterAllFileImported>
+        <bSaveFileInfo NodeID="0" DataID="885">0</bSaveFileInfo>
+        <HeaderParameters DataID="1360" Defined="1"/>
+    </Display>
+    <UserDefine>
+        <PostImportScript NodeID="33" DataID="803"></PostImportScript>
+        <OCFile NodeID="33" DataID="804"></OCFile>
+        <OCFunction NodeID="33" DataID="805"></OCFunction>
+        <OCClass NodeID="33" DataID="806"/>
+        <PyCode NodeID="33" DataID="826"></PyCode>
+        <PyFile NodeID="33" DataID="827">load-mpt-chargedischarge-modulobat.py</PyFile>
+        <Type NodeID="0" DataID="828">2</Type>
+        <iMode DataID="770">4</iMode>
+    </UserDefine>
+</OriginStorage>
