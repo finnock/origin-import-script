@@ -5,23 +5,33 @@ import originpro as op
 
 # # Read in File ##
 base_path = os.path.split(op.get_lt_str('fname'))[0]
-sample_name = 'JaOe2019 - 4Ly'
-layers = 4
 
+## Hier Daten Eintragen
+sample_name = 'BeKo0001 - 2Ly GCL'
+layers = 2
+
+## Hier Files eintragen
 file_list = {
-    f"Initial OCV":  f"chargedischargeStandardprotokoll_01_OCV_C01.mpt",
-    f"Initial PEIS":  f"chargedischargeStandardprotokoll_02_PEIS_C01.mpt",
-    f"CD 10mA":  f"chargedischargeStandardprotokoll_03_MB_C01.mpt",
-    f"CD 5mA":  f"chargedischargeStandardprotokoll_04_MB_C01.mpt",
-    f"CD 1mA":  f"chargedischargeStandardprotokoll_05_MB_C01.mpt",
-    f"CD 0.5mA":  f"chargedischargeStandardprotokoll_06_MB_C01.mpt",
-    f"CD 0.1mA":  f"chargedischargeStandardprotokoll_07_MB_C01.mpt",
-    f"Final OCV":  f"chargedischargeStandardprotokoll_08_OCV_C01.mpt",
-    f"Final PEIS":  f"chargedischargeStandardprotokoll_09_PEIS_C01.mpt",
+    f"Initial OCV 1": f"BeKo0001 - 2Ly Glued Conductive Lacquer_02_OCV_C01.mpt",
+    f"Initial OCV 2": f"BeKo0001 - 2Ly Glued Conductive Lacquer_05_OCV_C01.mpt",
+    f"Initial OCV 3": f"BeKo0001 - 2Ly Glued Conductive Lacquer_08_OCV_C01.mpt",
+    f"Initial OCV 4": f"BeKo0001 - 2Ly Glued Conductive Lacquer_11_OCV_C01.mpt",
+
+    f"CD 10mA": f"BeKo0001 - 2Ly Glued Conductive Lacquer_14_MB_C01.mpt",
+    f"CD 5mA": f"BeKo0001 - 2Ly Glued Conductive Lacquer_15_MB_C01.mpt",
+    f"CD 1mA": f"BeKo0001 - 2Ly Glued Conductive Lacquer_16_MB_C01.mpt",
+    f"CD 0.5mA": f"BeKo0001 - 2Ly Glued Conductive Lacquer_17_MB_C01.mpt",
+    f"CD 0.1mA": f"BeKo0001 - 2Ly Glued Conductive Lacquer_18_MB_C01.mpt",
+
+    f"Final OCV": f"BeKo0001 - 2Ly Glued Conductive Lacquer_19_OCV_C01.mpt",
 }
 
+## Hier nur was ändern wenn sich das Messprotokoll ändert
 full_measurement_list = [
-    'Initial OCV',
+    'Initial OCV 1',
+    'Initial OCV 2',
+    'Initial OCV 3',
+    'Initial OCV 4',
     'CD 10mA',
     'CD 5mA',
     'CD 1mA',
@@ -31,7 +41,10 @@ full_measurement_list = [
 ]
 
 ocv_list = [
-    'Initial OCV',
+    'Initial OCV 1',
+    'Initial OCV 2',
+    'Initial OCV 3',
+    'Initial OCV 4',
     'Final OCV',
 ]
 
@@ -41,11 +54,6 @@ cd_list = [
     'CD 1mA',
     'CD 0.5mA',
     'CD 0.1mA',
-]
-
-eis_measurements = [
-    'Initial PEIS',
-    'Final PEIS',
 ]
 
 # ################# Read in Files #################

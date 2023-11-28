@@ -336,12 +336,14 @@ class BiologicFile:
 
         technique_df = pandas.DataFrame(technique)
         technique_df = technique_df.set_index([0])
+        technique_df = technique_df.replace(',', '.', regex=True)
 
         # Extract EC Data
 
         ec_data = list(map(lambda el: el.split('\t'), file_contents[header_lines:]))
         ec_df = pandas.DataFrame(ec_data)
         ec_df.columns = file_contents[header_lines - 1].replace(' ', '_').split('\t')[:-1]
+        ec_df = ec_df.replace(',', '.', regex=True)
         ec_df = ec_df.astype(np.float64)
 
         header_object['flags'] = flags

@@ -14,7 +14,7 @@ file.crop_columns_to(['time/s', 'cycle_number', 'half_cycle', 'Ewe/V', 'Ece/V', 
 file.resolution_crop(delta_time=10, delta_pot=0.01)
 file.shift_cycles()
 file.extract_cycles()
-# file.calculate_charge_discharge_capacitances()
+file.calculate_charge_discharge_capacitances()
 
 # ################# Output Workbooks #################
 
