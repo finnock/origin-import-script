@@ -65,7 +65,6 @@ print('Finished reading all files BiologicFile Objects')
 
 for name in cd_list:
     file_list[name].crop_columns_to(['time/s', 'cycle_number', 'half_cycle', 'Ewe/V', 'Ece/V', 'Ewe-Ece/V', 'I/mA'])
-    file_list[name].shift_time_to_zero()
     file_list[name].resolution_crop(delta_time=10, delta_pot=0.01)
 
 print('Finished cropping all files in the \'cd_list\'')
@@ -77,6 +76,7 @@ for name in ocv_list:
 print('Finished cropping all files in the \'ocv_list\'')
 
 for name in cd_list:
+    file_list[name].shift_time_to_zero()
     file_list[name].shift_cycles()
     file_list[name].extract_cycles()
     file_list[name].calculate_charge_discharge_capacitances()
